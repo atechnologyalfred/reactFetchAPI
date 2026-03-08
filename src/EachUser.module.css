@@ -1,0 +1,139 @@
+/* Page Container */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2f7, #f8fafc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Profile Card */
+.card {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 2.5rem;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.role {
+  font-size: 1.1rem;
+  color: #667085;
+  margin-top: 0.5rem;
+}
+
+/* Info Section */
+.info {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+}
+
+/* Technology Section */
+.techSection {
+  margin-top: 1rem;
+}
+
+.techTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Tech List */
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  background: #f1f5f9;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  color: #334155;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.list li:hover {
+  background: #2563eb;
+  color: white;
+
+}
+
+.backBtn {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  background: #8e008e;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.backBtn:hover {
+  background: #6b006b;
+  transform: translateX(-3px);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .card {
+    padding: 2rem;
+  }
+
+  .name {
+    font-size: 1.6rem;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .list {
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+  }
+
+}
